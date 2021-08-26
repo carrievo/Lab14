@@ -1,1 +1,59 @@
-/* TODO: Make it awesome */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    background-color: #B5E48C;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 800;
+    font-size: 36px;
+}
+header:first-child {
+    margin: auto;
+    text-align: center;
+    background-color: #34A0A4;
+    padding: 30px;
+    
+}
+header:nth-child(1) {
+    padding: 0px 0 20px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav ul li {
+    padding: 30px;
+    
+}
+a {
+    text-decoration: none;
+    font
+}
+
+div li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#catalog {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 30px
+}
+legend {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+tbody tr td:first-child {
+    cursor: pointer;
+}
