@@ -48,11 +48,21 @@ function addSelectedItemToCart() {
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+  let span = document.getElementById('itemCount');
+  span.textContent = cart.items.length;
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
+  let itemPicked = document.getElementById('items').value;
+  // DONE: get the quantity
+  let itemQuantity = document.getElementById('quantity').value;
   // TODO: Get the item and quantity from the form
+  let div = document.getElementById('cartContents');
+  let p = document.createElement('p');
+  p.textContent = `${itemPicked} Qty: ${itemQuantity}`;
+  div.appendChild(p);
   // TODO: Add a new element to the cartContents div with that information
 }
 
@@ -61,6 +71,8 @@ function updateCartPreview() {
 // Call that handleSubmit method above and kick off the whole process
 const catalogForm = document.getElementById('catalog');
 catalogForm.addEventListener('submit', handleSubmit);
+
+
 
 // Before anything else of value can happen, we need to fill in the select
 // drop down list in the form.
